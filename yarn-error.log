@@ -1,0 +1,71 @@
+Arguments: 
+  /Users/kudzanayi/.nvm/versions/node/v11.10.1/bin/node /usr/local/bin/yarn add @/undefined
+
+PATH: 
+  /Users/kudzanayi/.nvm/versions/node/v11.10.1/lib/node_modules/npm/node_modules/npm-lifecycle/node-gyp-bin:/Users/kudzanayi/Desktop/snippets/adoptMe/node_modules/.bin:/Users/kudzanayi/.nvm/versions/node/v11.10.1/bin:/Users/kudzanayi/.rvm/gems/ruby-2.5.3/bin:/Users/kudzanayi/.rvm/gems/ruby-2.5.3@global/bin:/Users/kudzanayi/.rvm/rubies/ruby-2.5.3/bin:/Applications/Postgres.app/Contents/Versions/latest/bin:/usr/local:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/kudzanayi/.nvm/versions/node/v11.10.1/bin:/Users/kudzanayi/.rvm/gems/ruby-2.5.3/bin:/Users/kudzanayi/.rvm/gems/ruby-2.5.3@global/bin:/Users/kudzanayi/.rvm/rubies/ruby-2.5.3/bin:/Applications/Postgres.app/Contents/Versions/latest/bin:/usr/local:/usr/local/sbin:/Users/kudzanayi/.rvm/bin
+
+Yarn version: 
+  1.13.0
+
+Node version: 
+  11.10.1
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: https://registry.npmjs.org/@%2fundefined: Not found
+      at Request.params.callback [as _callback] (/usr/local/lib/node_modules/yarn/lib/cli.js:66255:18)
+      at Request.self.callback (/usr/local/lib/node_modules/yarn/lib/cli.js:129397:22)
+      at Request.emit (events.js:197:13)
+      at Request.<anonymous> (/usr/local/lib/node_modules/yarn/lib/cli.js:130369:10)
+      at Request.emit (events.js:197:13)
+      at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/yarn/lib/cli.js:130291:12)
+      at Object.onceWrapper (events.js:285:13)
+      at IncomingMessage.emit (events.js:202:15)
+      at endReadableNT (_stream_readable.js:1129:12)
+      at processTicksAndRejections (internal/process/next_tick.js:76:17)
+
+npm manifest: 
+  {
+    "name": "adoptMe",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "dev": "parcel src/index.html",
+      "dev:mock": "cross-env PET_MOCK=mock parcel src/index.html",
+      "format": "prettier \"src/**/*.{js,html}\" --write",
+      "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+      "babel-eslint": "^10.1.0",
+      "cross-env": "^7.0.2",
+      "eslint": "^7.3.1",
+      "eslint-config-prettier": "^6.11.0",
+      "eslint-plugin-import": "^2.21.2",
+      "eslint-plugin-jsx-a11y": "^6.3.1",
+      "eslint-plugin-react": "^7.20.0",
+      "eslint-plugin-react-hooks": "^4.0.4",
+      "parcel-bundler": "^1.12.4",
+      "prettier": "^2.0.5"
+    },
+    "dependencies": {
+      "@frontendmasters/pet": "^1.0.3",
+      "react": "^16.13.1",
+      "react-dom": "^16.13.1"
+    },
+    "browserslist": [
+      "last 2 Chrome versions"
+    ]
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
